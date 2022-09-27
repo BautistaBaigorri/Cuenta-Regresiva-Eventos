@@ -22,6 +22,11 @@ document.querySelector("form").addEventListener("submit", (e) => {
   addEvent();
 });
 
+buttonAdd.addEventListener("click", (e) => {
+  e.preventDefault();
+  addEvent();
+});
+
 function addEvent() {
   if (eventName.value === "" || eventDate.value === "") {
     return;
