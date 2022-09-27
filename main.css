@@ -1,0 +1,19 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: pink;  
+}
+
+.form {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
