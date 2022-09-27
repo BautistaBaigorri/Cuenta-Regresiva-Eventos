@@ -21,7 +21,7 @@ function addEvent() {
   }
 
   const newEvent = {
-    if: (Math.random() * 100).toString(36).slice(3),
+    id: (Math.random() * 100).toString(36).slice(3),
     name: eventName.value,
     date: eventDate.value,
   };
@@ -45,18 +45,24 @@ function renderEvents() {
   const eventsHTML = events.map((event) => {
     return `
         <div class="event">
-            <div class="days">
-               <span class="days-number">${dateDiff(event.date)}</span>
-               <span class="days-text">días</span>
-            </div>
-
+            <div class="days"><span class="days-number">${dateDiff(
+              event.date
+            )}</span><span class="days-text">días</span></div>
             <div class="event-name">${event.name}</div>
             <div class="event-date">${event.date}</div>
-            <div class="actions" data-id="${event.id}">
-               <button class="bDelete">Eliminar</button>
-            </div>
-        </div>
-        `;
+            <div class="actions"><button data-id="${
+              event.id
+            }" class="bDelete">Eliminar</button></div>
+        </div>`;
   });
+
   eventsContainer.innerHTML = eventsHTML.join("");
+
+  document.querySelectorAll(".bDelete").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const id = button.getAttribute("data-id");
+      events = events.filter((event) => event.id !== id);
+      renderEvents();
+    });
+  });
 }
