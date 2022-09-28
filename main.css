@@ -313,3 +313,102 @@ input[type="submit"]:hover {
     font-size: 17px;
   }
 }
+
+/* RESPONSIVE MOBILE S */
+
+@media only screen and (max-width: 320px) {
+  .tittle {
+    text-align: center;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+  }
+
+  .form {
+    background-color: white;
+    padding: 5px;
+    width: 140px;
+    margin: 100px auto;
+    transform: scale(2);
+    border: 2px solid rgb(34, 193, 195);
+  }
+
+  .form input {
+    margin: 5px 0;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    border: none;
+    background-color: #1860a8;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 9px;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    font-size: 9px;
+  }
+
+  input[type="date"] {
+    padding: 5px;
+    font-size: 9px;
+  }
+
+  #eventsContainer {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 3px solid rgb(34, 193, 195);
+  }
+
+  .event {
+    border: solid 1px #ccc;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .event .days {
+    text-align: center;
+    width: 100px;
+  }
+
+  .event .days .days-number {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+  }
+
+  .event .event-name {
+    padding: 10px;
+    width: 100px;
+    font-size: 15px;
+  }
+
+  .event .event-date {
+    padding: 10px;
+    width: 250px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .event .actions .bDelete {
+    padding: 6px;
+    width: 60px;
+    font-size: 13px;
+  }
+}
