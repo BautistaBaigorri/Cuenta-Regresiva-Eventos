@@ -108,7 +108,6 @@ input[type="submit"]:hover {
 /* RESPONSIVE TABLET */
 
 @media only screen and (max-width: 768px) {
- 
   .tittle {
     text-align: center;
     font-style: italic;
@@ -135,5 +134,102 @@ input[type="submit"]:hover {
     flex-direction: column;
     gap: 10px;
     border: 3px solid rgb(34, 193, 195);
+  }
+}
+
+/* RESPONSIVE MOBILE L */
+
+@media only screen and (max-width: 425px) {
+  .tittle {
+    text-align: center;
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 19px;
+  }
+
+  .form {
+    background-color: white;
+    padding: 10px;
+    width: 150px;
+    margin: 110px auto;
+    transform: scale(2);
+    border: 2px solid rgb(34, 193, 195);
+  }
+
+  .form input {
+    margin: 5px 0;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    border: none;
+    background-color: #1860a8;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+  input[type="text"] {
+    font-size: 10px;
+  }
+
+  input[type="date"] {
+    font-size: 10px;
+  }
+
+  #eventsContainer {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 3px solid rgb(34, 193, 195);
+  }
+
+  .event {
+    border: solid 1px #ccc;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .event .days {
+    text-align: center;
+    width: 100px;
+  }
+
+  .event .days .days-number {
+    font-size: 35px;
+    font-weight: bold;
+    display: block;
+  }
+
+  .event .event-name {
+    padding: 10px;
+    width: 100px;
+    font-size: 17px;
+  }
+
+  .event .event-date {
+    padding: 10px;
+    width: 240px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .event .actions .bDelete {
+    padding: 6px;
+    width: 80px;
+    font-size: 17px;
   }
 }
