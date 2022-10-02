@@ -233,7 +233,7 @@ svg #github:hover {
     background-color: white;
     border-radius: 5px;
     padding: 15px;
-    width: 375px;
+    width: 355px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -317,7 +317,7 @@ svg #github:hover {
     background-color: white;
     border-radius: 5px;
     padding: 15px;
-    width: 330px;
+    width: 310px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -382,7 +382,7 @@ svg #github:hover {
   .form {
     background-color: white;
     padding: 5px;
-    width: 140px;
+    width: 120px;
     margin: 100px auto;
     transform: scale(2);
     border: 2px solid rgb(34, 193, 195);
@@ -420,7 +420,7 @@ svg #github:hover {
     background-color: white;
     border-radius: 5px;
     padding: 10px;
-    width: 280px;
+    width: 260px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
